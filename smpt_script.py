@@ -1,9 +1,9 @@
 import smtplib
 
-SENDER = 'joao.langlois@hotmail.com'
+SENDER = input('sender:')
 LOGIN    = SENDER
 PASSWORD = input("password:")
-RECEIVER  = ["jlangl@uwo.ca"]
+RECEIVER  = [input("recipient: ")]
 SUBJECT  = "ECE4436 Lab 1"
 
 msg = ("From: %s\r\nTo: %s\r\nSubject: %s\r\n\r\n"
